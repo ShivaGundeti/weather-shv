@@ -21,7 +21,7 @@ async function getUser() {
     console.log(`Temperature in ${city}: ${data.main.temp}`);
     temp.innerHTML = `<h1>${data.main.temp}°C</h1>`
     name.innerHTML = `<h1>${data.name}</h1>`
-    few_det.innerHTML = `<h4>Pressure: ${data.main.pressure} &nbsp Humidity: ${data.main.pressure} &nbsp  Sea Level: ${data.main.pressure}<h4>`;
+    few_det.innerHTML = `<h4>Pressure: ${data.main.pressure} &nbsp Humidity: ${data.main.humidity} &nbsp  Sea Level: ${data.main.pressure}<h4>`;
     desc.innerHTML = `<h2>Description: ${data.weather[0].description}</h2>` // Example: Log temperature
   } catch (error) {
     console.error("Error fetching data:", error);
